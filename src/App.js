@@ -8,7 +8,7 @@ function App() {
     <div class="">
       <Topbar/>
       <div class="w-full h-section relative top-20 overflow-y-scroll
-       snap snap-y snap-mandatory hide-scrollbar-chrome hide-scrollbar-firefox scroll-smooth">
+       snap snap-y snap-mandatory hide-scrollbar-chrome hide-scrollbar-firefox scroll-smooth mt-12">
         <Intro/>
         <Portfolio/>
         <Contact/>

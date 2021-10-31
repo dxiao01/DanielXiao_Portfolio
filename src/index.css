@@ -21,11 +21,86 @@
       } 
 
       .hide-scrollbar-firefox {
-        -ms-overflow-style: none;  /* IE and Edge */
-        scrollbar-width: none;  /* Firefox */
+        -ms-overflow-style: none;
+        scrollbar-width: none; 
       }
 
       .scroll-smooth {
         scroll-behavior: smooth;
+      }
+
+      .line-1 {
+        border-right: solid 3px #000000;
+        white-space: nowrap;
+        overflow: hidden;    
+        font-family: 'Roboto', monospace;  
+        font-size: 28px;
+      }
+      
+      .line-1-animation {
+        animation: animated-text-line-1 3s steps(26,end) 1s 1 normal both,
+                   animated-cursor-line-1 900ms steps(26,end) infinite;
+      }
+      
+      
+      @keyframes animated-text-line-1{
+        from{width: 0;}
+        to{width: 340px;}
+      }
+      
+      
+      @keyframes animated-cursor-line-1{
+        from{border-right-color: #000000;}
+        to{border-right-color: transparent;}
+      }
+
+      .line-2 {
+        border-right: solid 3px #000000;
+        white-space: nowrap;
+        overflow: hidden;    
+        font-family: 'Roboto', monospace;  
+        font-size: 28px;
+      }
+      
+      .line-2-animation {
+        animation: animated-text-line-2 2.5s steps(26,end) 5s 1 normal both,
+                   animated-cursor-line-2 900ms steps(26,end) infinite;
+      }
+      
+      
+      @keyframes animated-text-line-2{
+        from{width: 0;}
+        to{width: 230px;}
+      }
+      
+      
+      @keyframes animated-cursor-line-2{
+        from{border-right-color: #000000;}
+        to{border-right-color: transparent;}
+      }
+
+      .line-3 {
+        border-right: solid 3px #000000;
+        white-space: nowrap;
+        overflow: hidden;    
+        font-family: 'Roboto', monospace;  
+        font-size: 28px;
+      }
+      
+      .line-3-animation {
+        animation: animated-text-line-3 2.25s steps(26,end) 9s 1 normal both,
+                   animated-cursor-line-3 900ms steps(26,end) infinite;
+      }
+      
+      
+      @keyframes animated-text-line-3{
+        from{width: 0;}
+        to{width: 190px;}
+      }
+      
+      
+      @keyframes animated-cursor-line-3{
+        from{border-right-color: #000000;}
+        to{border-right-color: transparent;}
       }
   }
