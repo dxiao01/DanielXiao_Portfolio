@@ -2,10 +2,25 @@ module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'topbar': '#15023a',
+      },
+      height: {
+        'section': 'calc(100vh - 70px)',
+        '70px': '70px',
+        '4.5': '4.5rem',
+        '3': '3px'
+      },
+      zIndex: {
+        '2': '2',
+      }
+    },
   },
   variants: {
-    extend: {},
+    extend: {
+      scrollSnapType: ['responsive'],
+    },
   },
-  plugins: [],
+  plugins: [require('tailwindcss-scroll-snap')],
 }
