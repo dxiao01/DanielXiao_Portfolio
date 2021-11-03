@@ -29,58 +29,28 @@
         scroll-behavior: smooth;
       }
 
-      .line-1 {
-        border-right: solid 3px #000000;
-        white-space: nowrap;
-        overflow: hidden;    
-        font-family: 'Roboto', monospace;  
-        font-size: 28px;
-      }
-      
       .line-1-animation {
-        animation: animated-text-line-1 3s steps(26,end) 1s 1 normal both,
-                   animated-cursor-line-1 900ms steps(26,end) infinite;
+        animation: animated-text-line-1 2s steps(26,end) 1s 1 normal both,
+                   animated-cursor-line 900ms steps(26,end) 0.5s 4;
       }
-      
       
       @keyframes animated-text-line-1{
         from{width: 0;}
-        to{width: 340px;}
-      }
-      
-      
-      @keyframes animated-cursor-line-1{
-        from{border-right-color: #000000;}
-        to{border-right-color: transparent;}
-      }
-
-      .line-2 {
-        border-right: solid 3px #000000;
-        white-space: nowrap;
-        overflow: hidden;    
-        font-family: 'Roboto', monospace;  
-        font-size: 28px;
+        to{width: 345px;}
       }
       
       .line-2-animation {
-        animation: animated-text-line-2 2.5s steps(26,end) 5s 1 normal both,
-                   animated-cursor-line-2 900ms steps(26,end) infinite;
+        animation: animated-text-line-2 1.5s steps(26,end) 5s 1 normal both,
+                   animated-cursor-line 900ms steps(26,end) 4s 4
       }
-      
       
       @keyframes animated-text-line-2{
         from{width: 0;}
         to{width: 230px;}
       }
-      
-      
-      @keyframes animated-cursor-line-2{
-        from{border-right-color: #000000;}
-        to{border-right-color: transparent;}
-      }
-
-      .line-3 {
-        border-right: solid 3px #000000;
+   
+      .line {
+        border-right: solid 3px transparent;
         white-space: nowrap;
         overflow: hidden;    
         font-family: 'Roboto', monospace;  
@@ -88,19 +58,22 @@
       }
       
       .line-3-animation {
-        animation: animated-text-line-3 2.25s steps(26,end) 9s 1 normal both,
-                   animated-cursor-line-3 900ms steps(26,end) infinite;
+        animation: animated-text-line-3 1.25s steps(26,end) 8.5s 1 normal both,
+                   animated-cursor-line 900ms steps(26,end) 7.5s 5;
       }
       
       
       @keyframes animated-text-line-3{
         from{width: 0;}
-        to{width: 190px;}
+        to{width: 220px;}
       }
       
       
-      @keyframes animated-cursor-line-3{
-        from{border-right-color: #000000;}
-        to{border-right-color: transparent;}
+      @keyframes animated-cursor-line{
+        from{border-right-color: transparent;}
+        to{border-right-color: #FFFFFF;}
       }
+      
+
+      
   }

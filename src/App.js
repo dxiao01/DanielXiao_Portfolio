@@ -1,19 +1,33 @@
+import React from 'react'
 import Topbar from './components/Topbar';
 import Intro from './components/Intro';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
+import path from './components/utils/path'
 
 function App() {
+  
+  
   return (
-    <div class="">
+    
+    <Router>
       <Topbar/>
       <div class="w-full h-section relative top-20 overflow-y-scroll
-       snap snap-y snap-mandatory hide-scrollbar-chrome hide-scrollbar-firefox scroll-smooth mt-12">
-        <Intro/>
-        <Portfolio/>
-        <Contact/>
+       snap snap-y snap-mandatory hide-scrollbar-chrome hide-scrollbar-firefox scroll-smooth">
+         <Switch>
+          <Route exact path={path.root} component = {Intro} />
+          <Route path={path.projects} component = {Portfolio} />
+          <Route path={path.contact} component = {Contact} />
+        </Switch>
       </div>
-    </div>
+    
+    </Router>
+    
   );
 }
 

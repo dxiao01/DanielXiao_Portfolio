@@ -14,7 +14,12 @@ module.exports = {
       },
       zIndex: {
         '2': '2',
-      }
+      },
+      flexGrow: {
+        '0.5': '0.5',
+      },
+      fontWeight: ['hover', 'focus'],
+      
     },
   },
   variants: {

@@ -2,6 +2,9 @@
 import React from 'react'
 import {BsFillPersonFill} from "react-icons/bs"
 import {AiFillMail} from "react-icons/ai"
+import {IoSchoolSharp} from "react-icons/io5"
+import {BsGithub} from "react-icons/bs"
+import {Link} from 'react-router-dom'
 
 const Topbar = () => {
     return (
@@ -17,16 +20,25 @@ const Topbar = () => {
                         <AiFillMail class="text-2xl mr-2"/>
                         <span class="text-base font-normal">danielxiaobci@gmail.com</span>
                     </div>
+                    <div class="flex items-center ml-7">
+                        <IoSchoolSharp class="text-2xl mr-2"/>
+                        <span class="text-base font-normal">Texas Academy of Math and Science</span>
+                    </div>
                 </div>
-                <div class="flex flex-row">
-                    <div class="font-bold">
-                        <a href="#intro">Intro</a>
-                    </div>
-                    <div class="ml-7 font-bold">
+                <div class="flex flex-row items-center">
+                    <Link to="/" class="font-bold">
+                        <a href="#intro">Home</a>
+                    </Link>
+                    <Link to="/projects" class="ml-7 font-bold">
                         <a href="#portfolio">Portfolio</a>
-                    </div>
-                    <div class="ml-7 font-bold">
+                    </Link>
+                    <Link to="/contact" class="ml-7 font-bold">
                         <a href="#contact">Contact</a>
+                    </Link>
+                    <div class="ml-7 font-bold">
+                        <a href="https://github.com/dxiao01" target="_blank">
+                            <BsGithub class="w-7 h-7"/>
+                        </a>
                     </div>
                 </div>
             </div>
