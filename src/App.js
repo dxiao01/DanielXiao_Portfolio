@@ -18,7 +18,7 @@ function App() {
     <Router>
       <Topbar/>
       <div class="w-full h-section relative top-20 overflow-y-scroll
-       snap snap-y snap-mandatory hide-scrollbar-chrome hide-scrollbar-firefox scroll-smooth">
+       hide-scrollbar-chrome hide-scrollbar-firefox">
          <Switch>
           <Route exact path={path.root} component = {Intro} />
           <Route path={path.projects} component = {Portfolio} />

@@ -35,7 +35,7 @@ const Intro = () => {
                         }
                     },
                     "color": {
-                        "value": "#ffffff"
+                        "value": "#E0DDDD"
                     },
                     "shape": {
                         "type": "circle",
