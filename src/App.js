@@ -15,7 +15,7 @@ function App() {
   
   return (
     
-    <Router>
+    <Router basename="/DanielXiao_Portfolio">
       <Topbar/>
       <div class="w-full h-section relative top-20 overflow-y-scroll
        hide-scrollbar-chrome hide-scrollbar-firefox">
