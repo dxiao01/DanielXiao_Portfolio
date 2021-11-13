@@ -19,7 +19,7 @@ const Intro = () => {
              </div>
              <div class="w-1/2">
                  <div class="ml-10 mt-56">
-                    <h1 class="text-3xl font-bold text-white mb-4">Hi There, I'm</h1>
+                    <h1 class="text-3xl font-bold text-white mb-4">Hi, I'm</h1>
                     <h2 class="text-6xl font-bold text-white mb-4">Daniel Xiao</h2>
                 </div>
              </div>

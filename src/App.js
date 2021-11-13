@@ -2,7 +2,6 @@ import React from 'react'
 import Topbar from './components/Topbar';
 import Intro from './components/Intro';
 import Portfolio from './components/Portfolio';
-import Contact from './components/Contact';
 import {
   BrowserRouter as Router,
   Switch,
@@ -22,7 +21,6 @@ function App() {
          <Switch>
           <Route exact path={path.root} component = {Intro} />
           <Route path={path.projects} component = {Portfolio} />
-          <Route path={path.contact} component = {Contact} />
         </Switch>
       </div>
     

@@ -10,7 +10,11 @@ module.exports = {
         'section': 'calc(100vh - 70px)',
         '70px': '70px',
         '4.5': '4.5rem',
-        '3': '3px'
+        '3': '3px',
+        '350': '350px',
+      },
+      width: {
+        '700': '700px'
       },
       zIndex: {
         '2': '2',

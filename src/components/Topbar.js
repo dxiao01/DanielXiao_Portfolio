@@ -32,9 +32,6 @@ const Topbar = () => {
                     <Link to="/projects" class="ml-7 font-bold">
                         <a href="#portfolio">Portfolio</a>
                     </Link>
-                    <Link to="/contact" class="ml-7 font-bold">
-                        <a href="#contact">Contact</a>
-                    </Link>
                     <div class="ml-7 font-bold">
                         <a href="https://github.com/dxiao01" target="_blank">
                             <BsGithub class="w-7 h-7"/>
